@@ -1,0 +1,238 @@
+  /* This made all links black*/
+  * {
+    color: #000;
+  }
+  /*body tag*/
+  body {
+    /*I didn't notice anything change*/
+    background: none repeat scroll 0 0 #fff;
+    /*I didn't noticed the difference in color*/
+    color: #222222;
+    /*Removed the margin and pushed further left*/
+    margin: 0;
+  }
+  /*add anchor tag*/
+  a {
+    /*same color as before*/
+    color: #222222;
+    /*removed all of the underlined links*/
+    text-decoration: none;
+  }
+  /*add anchor hover tag*/
+  a:hover {
+    /*I haven't noticed the noticed the color change. maybe because its the same color*/
+    color: #222222;
+    /*adds an underline when I hover over a link*/
+    text-decoration: underline;
+  }
+  /*add anchor for class "button"*/
+  a.button:hover {
+    /*removed underline over buttons*/
+    text-decoration: none;
+  }
+
+  /*add class selector for top nav*/
+  .top-navigation {
+  /*Moved top nav far right*/
+  float:right;
+  /*added margin to the right top nav*/
+  margin-right: 25px;
+  }
+  /* add top nav list rules*/
+  .top-navigation li {
+    /*removed the bullet points from top nav*/
+  list-style: none;
+  /*arranged in a straight line horizontally*/
+  display: inline-block;
+  /*aligned text to the right*/
+  text-align: right;
+  /*added padding between top nav elements*/
+  padding: 5px 10px 0 0;
+  /*didn't notice a big change*/
+  vertical-align: bottom;
+  /*added margin to the top and right*/
+  margin: 5px 5px 0 0;
+  /*lowered the font size of top nav*/
+  font-size: 13px;
+  }
+  /*class selector for font awesome*/
+  .fa {
+  /*larger font*/
+    font-size: 20px;
+  /*didn't notice a change */
+    vertical-align: top;
+  /*lightend text*/
+    opacity: 0.7;
+  /*didn't notice change in cursor*/
+    cursor: default;
+  }
+  /*selector for class font awesome*/
+  .fa:hover {
+  /*lightens text when hovered over*/
+    opacity: 1.0;
+  }
+  /*add class selector for the share-button*/
+  .share-button {
+  /*didn't notice change*/
+    background-color: #f2f2f2;
+  /*changed the padding aroung the share-button*/
+    padding: 7px 15px;
+  /*didn't notice a change in cursor*/
+    cursor: default;
+  /*changed size of share-button*/
+    position: relative;
+  /*didn't notice anything changes*/
+  top: -3px;
+  }
+  /*class selector for share-button's hover*/
+  .share-button:hover {
+  /*no real change*/
+    background-color: #E1E1E1;
+  }
+  /*profile image class selector*/
+  .profile-img {
+  /*assuming will round the border of profile pic*/
+    border-radius: 25px;
+  /*increase height of profile-img*/
+    height: 32px;
+    /*expanded the profile-img*/
+  width: 32px;
+  /*no real change*/
+  position: relative;
+  /*lowered the image to be aligned with top-navigation*/
+  top: 9px;
+  }
+
+
+  /* middle section*/
+  /* class selector for search-box*/
+  .search-box {
+  /*made other items squeeze behind search-box*/
+    position: absolute;
+  /*moved the search-box lower*/
+    margin-top: 75px;
+  /*didn't notice big change*/
+    width: 100%;
+  }
+  /*class selector for search-box img*/
+  .search-box img {
+  /*dropped by adding padding above the box*/
+    padding: 142px 0 24px 0;
+  /*moved search-box to left margin bc of the block element*/
+    display: block;
+  /*couldn't see a change*/
+    margin: 0 auto;
+  }
+  /*add class selector for search-box input*/
+  .search-box input {
+  /*increase the width of the search-box*/
+    width: 600px;
+  /*no real change*/
+    margin: 0 auto;
+  /*expnded size of search-box*/
+    padding: 5px;
+  /*set border around search-box*/
+    border: 1px solid #d9d9d9;
+  /*enlarged search area*/
+    font-size: 16px;
+  /*rounded the border*/
+    border-radius: 5px;
+  /*changed to block element, centered on page*/
+    display: block;
+  }
+  /*add selector for search-box and input of focus*/
+  .search-box input:focus {
+  border-color: #f5f5f5;
+  }
+  /*class selector for search-buttons*/
+  .search-buttons {
+  /*moved buttons in the center of the page*/
+    text-align: center;
+    padding-left: 0;
+  }
+  /*class selector for search-buttons*/
+  .search-buttons button{
+  /*added a shaddow behind buttons*/
+    background-color: #f5f5f5;
+  /*made the border thinner*/
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  /*rounded the button edges*/
+    border-radius: 2px;
+  /*lite blackish font*/
+    color: #666666;
+    font-size: 14px;
+  /*bolded the font within buttons*/
+    font-weight: bold;
+  /*adjusted the line*/
+    line-height: 27px;
+  /*added margin between box and buttons*/
+    margin: 17px 6px;
+  /*added padding for buttons*/
+    padding: 0 12px;
+    display: inline-block;
+  /*changed the cursor*/
+    cursor: pointer;
+  }
+  /*class selector for search-buttons hover*/
+  .search-buttons buttons:hover {
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    color: #333333;
+  }
+
+
+  /*bottom section nav class*/
+  .bottom-size-links {
+    bottom: 0 !important;
+    position: absolute;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+  }
+
+  /*class selector for left site links, ask about the comma*/
+  .left-site-links,
+  /*class selector for right site links*/
+  .right-site-links {
+  /*changed margins to zero around left and right links*/
+    margin: 0;
+  }
+  /*class selector for left-site-links*/
+  .left-site-links {
+    float: left;
+    padding-left:20px;
+  }
+  /*add selector for right-site-links*/
+  .right-site-links {
+  /* moved low right links to the right*/
+    float: right;
+    padding-right:10px;
+  }
+  /*class selector for left-site-links li*/
+  .left-site-links li,
+  .right-site-links li {
+
+    list-style: none;
+  /*changed links to be horizontal*/
+    display: inline;
+    line-height: 40px;
+  }
+  /*class selector right-site-links and anchor ask about first-child*/
+  .right-site-links a:first-child {
+    padding-right: 8px;
+  }
+  /*class selector left-site-links and secondary anchor tags*/
+  .left-site-links li:nth-child(2),
+  /*and 3rd anchor tags*/
+  .left-site-links li:nth-child(3) {
+    margin-left: 7px;
+  }
+  /*left-site-links and right-site-links with li anchors*/
+  .left-site-links li a,
+  .right-site-links li a {
+      color: #666666;
+    margin: 2px 10px 0;
+    letter-spacing: 0.1px;
+    font-size: 14px;
+  }
